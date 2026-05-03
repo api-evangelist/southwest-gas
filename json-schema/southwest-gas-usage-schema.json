@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/southwest-gas/json-schema/southwest-gas-usage-schema.json",
+  "title": "Southwest Gas Usage Record",
+  "description": "Natural gas consumption data for a Southwest Gas customer account, measured in therms or hundred cubic feet (CCF).",
+  "type": "object",
+  "properties": {
+    "accountNumber": {
+      "type": "string",
+      "description": "The Southwest Gas account number for this usage record."
+    },
+    "readDate": {
+      "type": "string",
+      "format": "date",
+      "description": "The meter read date for this usage record (YYYY-MM-DD)."
+    },
+    "usageTherms": {
+      "type": "number",
+      "description": "Natural gas consumption in therms.",
+      "minimum": 0
+    },
+    "usageCcf": {
+      "type": "number",
+      "description": "Natural gas consumption in hundred cubic feet (CCF).",
+      "minimum": 0
+    },
+    "readType": {
+      "type": "string",
+      "enum": ["Actual", "Estimated", "Customer"],
+      "description": "Method of meter reading."
+    },
+    "billingPeriodStart": {
+      "type": "string",
+      "format": "date",
+      "description": "Start date of the billing period."
+    },
+    "billingPeriodEnd": {
+      "type": "string",
+      "format": "date",
+      "description": "End date of the billing period."
+    },
+    "gasCharge": {
+      "type": "number",
+      "description": "Commodity charge for natural gas consumed.",
+      "minimum": 0
+    },
+    "distributionCharge": {
+      "type": "number",
+      "description": "Distribution service charge for delivering gas to premises.",
+      "minimum": 0
+    },
+    "totalCharge": {
+      "type": "number",
+      "description": "Total charges for this billing period.",
+      "minimum": 0
+    },
+    "heatingDegreeDays": {
+      "type": "integer",
+      "description": "Number of heating degree days in the billing period, indicating weather-driven heating demand.",
+      "minimum": 0
+    }
+  },
+  "required": ["accountNumber", "readDate", "readType"]
+}

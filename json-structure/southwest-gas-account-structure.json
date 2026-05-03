@@ -1,0 +1,67 @@
+{
+  "title": "Southwest Gas Account Structure",
+  "description": "Hierarchical structure of a Southwest Gas natural gas distribution customer account and related data entities.",
+  "type": "object",
+  "structure": {
+    "account": {
+      "description": "Root Southwest Gas customer account entity",
+      "fields": {
+        "accountNumber": "string — unique account identifier",
+        "accountName": "string — customer or business name",
+        "serviceType": "string — Residential | Commercial | Industrial",
+        "rateSchedule": "string — tariff schedule code",
+        "accountStatus": "string — Active | Inactive | Final | Disconnected",
+        "currentBalance": "number — outstanding balance (USD)",
+        "dueDate": "date",
+        "paperlessBilling": "boolean",
+        "autopay": "boolean",
+        "budgetBillingAmount": "number — monthly fixed payment (USD)"
+      },
+      "children": {
+        "serviceAddress": {
+          "description": "Natural gas service delivery address",
+          "fields": {
+            "street": "string",
+            "city": "string",
+            "state": "string — AZ | NV | CA",
+            "zipCode": "string"
+          }
+        },
+        "meter": {
+          "description": "Natural gas meter at service address",
+          "fields": {
+            "meterNumber": "string",
+            "lastReadDate": "date",
+            "lastReadCcf": "number — CCF reading",
+            "readType": "string — Actual | Estimated"
+          }
+        },
+        "usageHistory": {
+          "description": "Monthly natural gas usage and billing records",
+          "type": "array",
+          "items": {
+            "readDate": "date",
+            "usageTherms": "number",
+            "usageCcf": "number",
+            "billingPeriodStart": "date",
+            "billingPeriodEnd": "date",
+            "gasCharge": "number — USD",
+            "distributionCharge": "number — USD",
+            "totalCharge": "number — USD",
+            "heatingDegreeDays": "integer"
+          }
+        },
+        "agencyPledges": {
+          "description": "Utility assistance pledges from social service agencies",
+          "type": "array",
+          "items": {
+            "pledgeDate": "date",
+            "agencyName": "string",
+            "pledgeAmount": "number — USD",
+            "pledgeStatus": "string — Pending | Applied | Expired"
+          }
+        }
+      }
+    }
+  }
+}

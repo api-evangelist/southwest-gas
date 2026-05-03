@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/southwest-gas/json-schema/southwest-gas-account-schema.json",
+  "title": "Southwest Gas Customer Account",
+  "description": "A Southwest Gas customer account for natural gas distribution service in Arizona, Nevada, or California, including service address, usage, and billing information.",
+  "type": "object",
+  "properties": {
+    "accountNumber": {
+      "type": "string",
+      "description": "Unique Southwest Gas account number.",
+      "example": "0001234567"
+    },
+    "accountName": {
+      "type": "string",
+      "description": "Name of the account holder (individual or business)."
+    },
+    "serviceAddress": {
+      "type": "object",
+      "description": "Physical address receiving natural gas service.",
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["AZ", "NV", "CA"] },
+        "zipCode": { "type": "string" }
+      },
+      "required": ["street", "city", "state", "zipCode"]
+    },
+    "serviceType": {
+      "type": "string",
+      "enum": ["Residential", "Commercial", "Industrial"],
+      "description": "Customer classification for rate and service purposes."
+    },
+    "rateSchedule": {
+      "type": "string",
+      "description": "Tariff rate schedule code applied to this account."
+    },
+    "accountStatus": {
+      "type": "string",
+      "enum": ["Active", "Inactive", "Final", "Disconnected"],
+      "description": "Current status of the account."
+    },
+    "meterNumber": {
+      "type": "string",
+      "description": "Meter serial number at the service address."
+    },
+    "currentBalance": {
+      "type": "number",
+      "description": "Outstanding balance in US dollars.",
+      "minimum": 0
+    },
+    "dueDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Payment due date for the current balance."
+    },
+    "budgetBillingAmount": {
+      "type": "number",
+      "description": "Fixed monthly budget billing amount if enrolled in the program.",
+      "minimum": 0
+    },
+    "paperlessBilling": {
+      "type": "boolean",
+      "description": "Whether the account is enrolled in paperless billing."
+    },
+    "autopay": {
+      "type": "boolean",
+      "description": "Whether the account is enrolled in automatic payment."
+    }
+  },
+  "required": ["accountNumber", "accountName", "serviceAddress", "serviceType"]
+}

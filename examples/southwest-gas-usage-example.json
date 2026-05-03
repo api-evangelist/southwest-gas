@@ -1,0 +1,13 @@
+{
+  "accountNumber": "0001234567",
+  "readDate": "2026-04-15",
+  "usageTherms": 28.6,
+  "usageCcf": 27.9,
+  "readType": "Actual",
+  "billingPeriodStart": "2026-03-16",
+  "billingPeriodEnd": "2026-04-15",
+  "gasCharge": 31.22,
+  "distributionCharge": 18.47,
+  "totalCharge": 67.43,
+  "heatingDegreeDays": 184
+}

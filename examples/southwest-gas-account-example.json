@@ -1,0 +1,19 @@
+{
+  "accountNumber": "0001234567",
+  "accountName": "Robert Johnson",
+  "serviceAddress": {
+    "street": "5678 Desert Palm Drive",
+    "city": "Las Vegas",
+    "state": "NV",
+    "zipCode": "89101"
+  },
+  "serviceType": "Residential",
+  "rateSchedule": "GS-1",
+  "accountStatus": "Active",
+  "meterNumber": "NV-88445512",
+  "currentBalance": 67.43,
+  "dueDate": "2026-05-20",
+  "budgetBillingAmount": null,
+  "paperlessBilling": true,
+  "autopay": true
+}

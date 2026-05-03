@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "swg": "https://api-evangelist.github.io/southwest-gas/vocab#",
+
+    "GasUtility": "schema:Corporation",
+    "GasAccount": "schema:Account",
+    "GasUsage": "schema:QuantitativeValue",
+    "GasMeter": "schema:Product",
+    "BillingStatement": "schema:Invoice",
+    "ServiceAddress": "schema:PostalAddress",
+    "AgencyPledge": "schema:Offer",
+    "ServiceOutage": "schema:Event",
+
+    "accountNumber": {
+      "@id": "swg:accountNumber",
+      "@type": "xsd:string"
+    },
+    "serviceAddress": {
+      "@id": "schema:address",
+      "@type": "@id"
+    },
+    "usageTherms": {
+      "@id": "swg:usageTherms",
+      "@type": "xsd:decimal"
+    },
+    "usageCcf": {
+      "@id": "swg:usageCcf",
+      "@type": "xsd:decimal"
+    },
+    "billingAmount": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "billingPeriodStart": {
+      "@id": "schema:startDate",
+      "@type": "xsd:date"
+    },
+    "billingPeriodEnd": {
+      "@id": "schema:endDate",
+      "@type": "xsd:date"
+    },
+    "meterSerialNumber": {
+      "@id": "swg:meterSerialNumber",
+      "@type": "xsd:string"
+    },
+    "pledgeAmount": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "pledgeAgency": {
+      "@id": "schema:provider",
+      "@type": "@id"
+    },
+    "serviceTerritory": {
+      "@id": "swg:serviceTerritory",
+      "@type": "xsd:string"
+    },
+    "rateSchedule": {
+      "@id": "swg:rateSchedule",
+      "@type": "xsd:string"
+    },
+    "budgetBillingAmount": {
+      "@id": "swg:budgetBillingAmount",
+      "@type": "xsd:decimal"
+    }
+  }
+}

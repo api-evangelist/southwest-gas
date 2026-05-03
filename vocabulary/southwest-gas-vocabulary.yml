@@ -1,0 +1,92 @@
+vocabulary:
+  name: Southwest Gas Vocabulary
+  description: >-
+    Domain vocabulary for Southwest Gas Holdings, covering natural gas distribution,
+    customer account management, utility billing, pipeline operations, and infrastructure
+    services in Arizona, Nevada, and California.
+  tags:
+    - Natural Gas
+    - Utility
+    - Energy
+    - Fortune 1000
+  terms:
+    - term: Natural Gas
+      definition: >-
+        A fossil fuel energy source composed primarily of methane, distributed through
+        Southwest Gas's pipeline network to residential, commercial, and industrial
+        customers for heating, cooking, and other end uses.
+      category: Energy
+    - term: Therm
+      definition: >-
+        The standard unit of measurement for natural gas consumption, equivalent to
+        100,000 British Thermal Units (BTUs) of energy content.
+      category: Energy Metering
+    - term: CCF (Hundred Cubic Feet)
+      definition: >-
+        A volume-based unit of natural gas measurement, equal to 100 cubic feet,
+        used in billing and usage reporting.
+      category: Energy Metering
+    - term: Distribution System
+      definition: >-
+        The network of pipelines, pressure regulators, and service connections that
+        delivers natural gas from transmission lines to end-use customers.
+      category: Infrastructure
+    - term: Service Territory
+      definition: >-
+        The geographic area where Southwest Gas holds a regulatory franchise to
+        provide natural gas distribution service, covering parts of Arizona, Nevada,
+        and California.
+      category: Regulatory
+    - term: My Account
+      definition: >-
+        The Southwest Gas online customer portal and mobile application enabling
+        customers to view bills, make payments, track usage history, and manage
+        account preferences.
+      category: Customer Management
+    - term: Budget Billing
+      definition: >-
+        A payment plan option allowing customers to pay a fixed monthly amount based
+        on their average annual natural gas usage, smoothing seasonal bill variations.
+      category: Billing
+    - term: Gas Meter
+      definition: >-
+        The device installed at a customer's premises that measures the volume of
+        natural gas consumed, read periodically for billing purposes.
+      category: Infrastructure
+    - term: Pilot Light
+      definition: >-
+        A small standing flame in a gas appliance that ignites the main burner when
+        needed, relevant to customer safety and service visit contexts.
+      category: Customer Services
+    - term: Line Extension
+      definition: >-
+        The construction of new natural gas distribution infrastructure to connect
+        previously unserved areas or properties to the Southwest Gas system.
+      category: Infrastructure
+    - term: Agency Pledge
+      definition: >-
+        A commitment made by a social service agency to pay a portion of a low-income
+        customer's natural gas bill, submitted through the Southwest Gas Agency Portal.
+      category: Assistance Programs
+    - term: LIHEAP
+      definition: >-
+        Low Income Home Energy Assistance Program — a federal program helping eligible
+        households pay heating and cooling costs, coordinated through Southwest Gas's
+        agency portal.
+      category: Assistance Programs
+    - term: Centuri Group
+      definition: >-
+        A Southwest Gas Holdings subsidiary that provides full-service utility
+        infrastructure construction and services for gas and electric utilities
+        across North America.
+      category: Corporate
+    - term: Rate Case
+      definition: >-
+        A regulatory proceeding before a state public utilities commission to review
+        and approve changes to Southwest Gas's customer rates and tariffs.
+      category: Regulatory
+    - term: Outage
+      definition: >-
+        A disruption in natural gas service to one or more customers, tracked by
+        cause, location, affected customer count, and restoration status.
+      category: Operations
