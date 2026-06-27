@@ -35,9 +35,9 @@ apis:
         url: https://myaccount.swgas.com/Portal/
       - type: Mobile Application
         url: https://www.swgas.com/en/mobile-app
-      - type: JSON Schema
+      - type: JSONSchema
         url: https://raw.githubusercontent.com/api-evangelist/southwest-gas/refs/heads/main/json-schema/southwest-gas-account-schema.json
-      - type: JSON Schema
+      - type: JSONSchema
         url: https://raw.githubusercontent.com/api-evangelist/southwest-gas/refs/heads/main/json-schema/southwest-gas-usage-schema.json
   - aid: southwest-gas:southwest-gas-agency-portal-api
     name: Southwest Gas Agency Portal API
@@ -55,7 +55,7 @@ apis:
     properties:
       - type: Website
         url: https://agency.swgas.com/Portal/
-      - type: FAQs
+      - type: FAQ
         url: https://h1www.swgas.com/en/agency-portal-faqs
 common:
   - type: Website
@@ -72,7 +72,7 @@ common:
     url: https://www.linkedin.com/company/southwest-gas
   - type: X
     url: https://twitter.com/SouthwestGas
-  - type: JSON-LD Context
+  - type: JSONLDContext
     url: https://raw.githubusercontent.com/api-evangelist/southwest-gas/refs/heads/main/json-ld/southwest-gas-context.jsonld
   - type: Vocabulary
     url: https://raw.githubusercontent.com/api-evangelist/southwest-gas/refs/heads/main/vocabulary/southwest-gas-vocabulary.yml
