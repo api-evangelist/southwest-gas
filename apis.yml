@@ -58,6 +58,8 @@ apis:
       - type: FAQ
         url: https://h1www.swgas.com/en/agency-portal-faqs
 common:
+  - type: DomainSecurity
+    url: security/southwest-gas-domain-security.yml
   - type: Website
     url: https://www.swgas.com
   - type: Customer Portal
