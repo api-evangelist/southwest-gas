@@ -1,4 +1,17 @@
 aid: southwest-gas
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/southwest-gas.png
 name: Southwest Gas
 description: >-
   Southwest Gas Holdings is a natural gas distribution company that purchases, distributes,
