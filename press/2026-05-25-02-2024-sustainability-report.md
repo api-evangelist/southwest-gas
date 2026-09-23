@@ -1,7 +1,9 @@
 ---
 title: 2024 Sustainability Report
 url: https://www.swgas.com/1409224719685/SWG-2024-SR.pdf
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Southwest Gas" press release artificial intelligence'
 position: 2
 source: serpapi-google

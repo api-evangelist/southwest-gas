@@ -1,7 +1,9 @@
 ---
 title: Southwest Gas Holdings Announces Decision to Separate ...
 url: https://www.prnewswire.com/news-releases/southwest-gas-holdings-announces-decision-to-separate-centuri-creating-two-focused-independent-companies-to-unlock-value-for-stockholders-301493318.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Southwest Gas" press release artificial intelligence'
 position: 4
 source: serpapi-google
